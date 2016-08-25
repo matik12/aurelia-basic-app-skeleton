@@ -6,7 +6,6 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
-
   meta: {
     "bootstrap": {
       "deps": [
@@ -14,7 +13,6 @@ System.config({
       ]
     }
   },
-
   map: {
     "aurelia-animator-css": "npm:aurelia-animator-css@1.0.0",
     "aurelia-back-to-top": "npm:aurelia-back-to-top@0.1.1",
