@@ -1,0 +1,30 @@
+<template>
+    <section class="au-animate">
+        <h2>${heading}</h2>
+
+        <div class="row" infinite-scroll="callback.call: addMore()">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Family Name</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr repeat.for="user of users">
+                        <th scope="row">${user.id}</th>
+                        <td>${user.firstName}</td>
+                        <td>${user.familyName}</td>
+                        <td>
+                            <button class="btn btn-default" type="button" click.delegate="testAction()">Just do it!</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <back-to-top icon-class="glyphicon glyphicon-triangle-top"></back-to-top>
+    </section>
+</template>
