@@ -1,0 +1,6 @@
+node_modules
+typings
+bower_components
+.idea
+.DS_STORE
+build/reports
